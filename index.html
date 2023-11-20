@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>SnapGear: Camera Store</title>
+  <meta name="title" content="SnapGear: Camera Store">
+  <meta name="description" content="This is an eCommerce website project">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-product-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/Thumb/hero-product-2 copy.png">
+  <link rel="preload" as="image" href="./assets/images/hero-product-3.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-product-4.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-product-5.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="input-wrapper">
+        <input type="search" name="search" placeholder="Search Anything..." class="input-field">
+
+        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+      </div>
+
+      <a href="#" class="logo">SnapGear</a>
+
+      <div class="header-action">
+
+        <button class="header-action-btn" aria-label="user">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="favorite list">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SIDEBAR
+  -->
+
+  <div class="sidebar" data-navbar>
+
+    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <div class="wrapper">
+    <nav class="navbar">
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link" data-nav-link>About</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#product" class="navbar-link" data-nav-link>Product</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#blog" class="navbar-link" data-nav-link>Blogs</a>
+        </li>
+      </div>
+      </ul>
+    </nav>
+
+    <ul class="contact-list">
+
+      <li>
+        <p class="contact-list-title">Contact Us</p>
+      </li>
+
+      <li class="contact-item">
+        <address class="address">
+          422, Castillo St. Brgy IV Sariaya Quezon
+        </address>
+      </li>
+
+      <li class="contact-item">
+        <a href="mailto:support.center@woodex.co" class="contact-link">support.centersnapgear.com</a>
+      </li>
+
+      <li class="contact-item">
+        <a href="tel:00001235567890" class="contact-link">+63123456789</a>
+      </li>
+
+    </ul>
+
+    <div class="social-wrapper">
+
+      <p class="social-list-title">Follow US On Socials</p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://facebook.com/1smedar" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="overlay" data-overlay data-nav-toggler></div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <ul class="hero-list">
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="./assets/images/Thumb/hero-product-1 copy.png" width="285" height="396" alt="Art Deco Home"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Lens</a>
+                  </h3>
+
+                  <p class="card-text"></p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 568; --height: 389;">
+                  <img src="./assets/images/Thumb/hero-product-2 copy.png" width="568" height="389" alt="Helen Chair"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Camera's</a>
+                  </h3>
+
+                  <p class="card-text"></p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 285; --height: 396;">
+                  <img src="./assets/images/Thumb/hero-product-3 copy.png" width="285" height="396" alt="Vase Of Flowers"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Tripod</a>
+                  </h3>
+
+                  <p class="card-text"></p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="./assets/images/Thumb/hero-product-4 copy.png" width="580" height="213" alt="Wood Eggs"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Stabilizer</a>
+                  </h3>
+
+                  <p class="card-text"></p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="colspan-2">
+              <div class="hero-card">
+
+                <figure class="card-banner img-holder" style="--width: 580; --height: 213;">
+                  <img src="./assets/images/Thumb/hero-product-5 copy.png" width="580" height="213" alt="Table Wood Pine"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Drone</a>
+                  </h3>
+
+                  <p class="card-text"></p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+      
+          <h2 class="section-title">SnapGear Rental</h2>
+      
+          <p class="section-text">
+            Welcome to SnapGear Camera, where we believe that every photograph has the power to tell a love story. Behind every lens,
+            there's an opportunity to capture the essence of emotions, freeze moments of connection, and express the beauty of love.
+            Whether you're a seasoned photographer or someone capturing love in its purest form, SnapGear Camera is here to be a part
+            of your journey.
+          </p>
+      
+          <div class="about-card">
+            <figure class="card-banner img-holder" style="--width: 1170; --height: 450;">
+              <img src="./assets/images/play video.jpg" width="1170" height="450" loading="lazy" alt="Woodex promo"
+                class="img-cover">
+            </figure>
+      
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+      
+        </div>
+      </section>
+      
+      <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-block w-100 text-center">
+                <h1>Promotion</h1>
+                <p>Explore the latest camera collection at SnapGear Camera Store and seize the moment with special
+                  promotions on top-notch photography gear.</p>
+                <p>Elevate your photography experience today!.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-block w-100 text-center">
+                <h1>Featured Product</h1>
+                <p>Introducing the SnapPro X1000, your ultimate photography companion. Designed for professionals and enthusiasts, the SnapPro X1000
+                  offers cutting-edge features, superior image quality, and intuitive controls, redefining your photography journey</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-block w-100 text-center">
+                <h1>Customer Testimonials </h1>
+                <p>Discover why photographers trust SnapGear Camera Store. 'SnapGear delivers top-notch quality and unmatched service.
+                  I trust them for all my camera gear.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+      
+      
+
+
+
+
+      <!-- 
+        - #PRODUCTS
+      -->
+
+      <section class="section product" id="product" aria-label="product">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Popular Products</h2>
+
+            <ul class="filter-btn-list">
+
+              <li class="filter-btn-item">
+                <button class="filter-btn active" data-filter-btn="all">All Products</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="accessory">Camera</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="decoration">Lens</button>
+              </li>
+
+              <li class="filter-btn-item">
+                <button class="filter-btn" data-filter-btn="furniture">Tripod</button>
+              </li>
+
+            </ul>
+          </div>
+
+          <ul class="grid-list product-list" data-filter="all">
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-1 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Animi Dolor Pariatur" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="badge-list">
+
+                    <li>
+                      <div class="badge orange">Sale</div>
+                    </li>
+
+                    <li>
+                      <div class="badge cyan">-10%</div>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">FUJIFILM XF 70-300mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <del class="del">₱42,740.00</del>
+
+                    <data class="price" value="10">₱14,740.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-1 copy.jpg" width="300" height="300" loading="lazy" alt="Art Deco Home"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-badge">Out of Stock</div>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Canon G7 X Mark II</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="30">₱96,084.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-2 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Artificial potted plant" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Canon EF 75-300mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="40">₱13,498.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-2 copy.jpg" width="300" height="300" loading="lazy" alt="Dark Green Jug"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Canon G7 X Mark III</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="17.10">₱46,998.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-5 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Drinking Glasses" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">FUJIFILM X-T30</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="21">₱44,290.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="furniture">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/tripod/product-1 copy.jpg" width="300" height="300" loading="lazy" alt="Helen Chair"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Gitzo Mini</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="69.50">₱4,954.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-7 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="High Quality Glass Bottle" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Sony a7S III</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="30.10">₱64,999.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-8 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Living Room & Bedroom Lights" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nikon Z6 II</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="45">₱63,966.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="furniture">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/tripod/product-9 copy.jpg" width="300" height="300" loading="lazy" alt="Nancy Chair"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Gitzo Series 1</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="90">₱48,400</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="furniture">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/tripod/product-10 copy.jpg" width="300" height="300" loading="lazy" alt="Simple Chair"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Manfrotto 190go!</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="40">₱22,084.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-11 copy.jpg" width="300" height="300" loading="lazy" alt="Smooth Disk"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Sony FE 90mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="46">₱17,416.67</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="furniture">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/tripod/product-12 copy.jpg" width="300" height="300" loading="lazy" alt="Table Black"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Small Rig 4221</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="67">₱26,990.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="furniture">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/tripod/product-13 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Table Wood Pine" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Zhiyun WEEBILL 3s</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="50">₱17,879.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/cameras/product-14 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Teapot with black tea" class="img-cover">
+
+                    <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nikon Z8</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="25">₱87,215.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-15 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Unique Decoration" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nikon 70-180mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="15">₱73,900.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-16 copy.jpg" width="300" height="300" loading="lazy"
+                    alt="Vase Of Flowers" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Sony FE 24-70mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="77">₱95,000.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-17 copy.jpg" width="300" height="300" loading="lazy" alt="Wood Eggs"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Canon EF 100mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="19">₱67,923.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="decoration">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-18 copy.jpg" width="300" height="300" loading="lazy" alt="Wooden Box"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Canon EF 16-35mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="27">₱49,000.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="accessory">
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/products/lens/product-19 copy.jpg" width="300" height="300" loading="lazy" alt="Wooden Cups"
+                    class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nikon 24mm</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="29">₱65,000.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Explore our blog</h2>
+
+            <a href="#" class="btn-link">
+              <span class="span">View All</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/blog/Blog 1.jpg" width="374" height="243" loading="lazy"
+                    alt="Unique products that will impress your home in 2022." class="img-cover">
+
+                  <a href="#" class="card-btn">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Choosing the Right Camera for Your Project: A Guide for Beginners</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time class="card-meta-text" datetime="2022-09-27">November 19 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">Photographer</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/blog/blog 2.jpg" width="374" height="243" loading="lazy"
+                    alt="Navy Blue & White Striped Area Rugs" class="img-cover">
+
+                  <a href="#" class="card-btn">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Top 5 Must-Have Accessories for Every Photographer's Gear Bag</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time class="card-meta-text" datetime="2022-09-25">November 19 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">Photographer</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 374; --height: 243;">
+                  <img src="./assets/images/blog/blog 3.jpg" width="374" height="243" loading="lazy"
+                    alt="Woodex White Coated Staircase Floating" class="img-cover">
+
+                  <a href="#" class="card-btn">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Behind the Lens: Success Stories from SnapGear</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <time class="card-meta-text" datetime="2022-09-18">November 19 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <a href="#" class="card-meta-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      in <a href="#" class="card-meta-text">Photographer</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <div class="card-content">
+              <h2 class="h2 section-title">Our Newsletter</h2>
+
+              <p class="section-text">
+                Subscribe our newsletter and get discount 50% off
+              </p>
+            </div>
+
+            <form action="" class="card-form">
+              <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+              <button type="submit" class="newsletter-btn" aria-label="subscribe">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">SnapGear</a>
+
+          <ul>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                SnapGear, Sariaya, Quezon
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+1234567890" class="footer-link">+63123456789</a>
+            </li>
+
+            <li>
+              <ul class="social-list">
+
+                <li>
+                  <a href="https://facebook.com/1smedar" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Help & Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help & Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">About Us</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">What We Do</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ Page</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Newsletter</p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+            <button type="submit" class="footer-form-btn">
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <div class="wrapper">
+
+            <a href="#" class="footer-link">Term & Condition</a>
+            <a href="#" class="footer-link">Policy</a>
+            <a href="#" class="footer-link">Map</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2023 All Rights Reserved by <a href="#" class="copyright-link">SnapGear</a>.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
